@@ -1,0 +1,117 @@
+body {
+  max-width: 375px;
+  margin: 0 auto;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #efeded;
+}
+header,
+.post {
+  background-color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+header {
+  padding: 0 1rem 18px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c6c6c6;
+}
+.logo {
+  width: 127px;
+}
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.user-info {
+  display: flex;
+  padding: 10px;
+  gap: 7px;
+}
+.user-full-name,
+.like-count,
+.username-caption strong {
+  font-weight: 700;
+  font-size: 13px;
+  height: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.like-count {
+  display: flex;
+  align-items: center;
+}
+.location-text,
+.username-caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0%;
+}
+.location-text {
+  height: 15px;
+}
+.user-name-container,
+.user-full-name,
+.location-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-img {
+  cursor: pointer;
+}
+.post-body {
+  padding: 21px 16px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.post-icons {
+  display: flex;
+  gap: 15px;
+}
+.post-icons button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.post-icon-btn {
+  max-width: 23px;
+  transition: transform 0.15s ease;
+}
+.post-icon-btn:hover,
+.post-icon-btn:focus-visible {
+  cursor: pointer;
+  transform: scale(1.08);
+  opacity: 0.8;
+}
+.red-heart {
+  transform: scale(1.5);
+}
+
+.heart-pop {
+  animation: heart-pop 0.3s ease;
+}
+@keyframes heart-pop {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.8);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+.hidden {
+  display: none;
+}
