@@ -57,6 +57,7 @@ function createPost(
 
   const userAva = document.createElement("img");
   userAva.classList.add("avatar");
+  userAva.setAttribute("alt", `${name}`);
   userAva.src = avatar;
 
   const postBody = document.createElement("div");
