@@ -97,6 +97,7 @@ function createPost(
 
   const postImg = document.createElement("img");
   postImg.classList.add("post-img");
+  postImg.alt = `Post by ${name}`;
   postImg.src = postimg;
 
   post.appendChild(userInfo);
