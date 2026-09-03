@@ -38,7 +38,7 @@ function createPost(
   postimg,
   likes,
 ) {
-  const post = document.createElement("div");
+  const post = document.createElement("article");
   post.classList.add("post");
 
   const userInfo = document.createElement("div");
@@ -69,21 +69,21 @@ function createPost(
   const like = document.createElement("button");
   const likeIcon = document.createElement("img");
   likeIcon.src = "images/icon-heart.png";
-  likeIcon.setAttribute("alt", "Like icon");
+  likeIcon.setAttribute("alt", "");
   like.classList.add("post-icon-btn");
   like.setAttribute("aria-label", "Like this post");
   like.appendChild(likeIcon);
   const comment = document.createElement("button");
   const commentIcon = document.createElement("img");
   commentIcon.src = "images/icon-comment.png";
-  commentIcon.setAttribute("alt", "Comment icon");
+  commentIcon.setAttribute("alt", "");
   comment.classList.add("post-icon-btn");
   comment.setAttribute("aria-label", "Leave a comment");
   comment.appendChild(commentIcon);
   const share = document.createElement("button");
   const shareIcon = document.createElement("img");
   shareIcon.src = "images/icon-dm.png";
-  shareIcon.setAttribute("alt", "Share icon");
+  shareIcon.setAttribute("alt", "");
   share.classList.add("post-icon-btn");
   share.setAttribute("aria-label", "Share this post");
   share.appendChild(shareIcon);
@@ -161,7 +161,7 @@ function createPost(
     }
   }
 }
-for (i = 0; i < posts.length; i++) {
+for (let i = 0; i < posts.length; i++) {
   createPost(
     posts[i].name,
     posts[i].username,
