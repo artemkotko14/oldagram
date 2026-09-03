@@ -69,20 +69,23 @@ function createPost(
   const like = document.createElement("button");
   const likeIcon = document.createElement("img");
   likeIcon.src = "images/icon-heart.png";
+  likeIcon.setAttribute("alt", "Like icon");
   like.classList.add("post-icon-btn");
-  like.setAttribute("alt", "Like this post");
+  like.setAttribute("aria-label", "Like this post");
   like.appendChild(likeIcon);
   const comment = document.createElement("button");
   const commentIcon = document.createElement("img");
   commentIcon.src = "images/icon-comment.png";
+  commentIcon.setAttribute("alt", "Comment icon");
   comment.classList.add("post-icon-btn");
-  comment.setAttribute("alt", "Leave a comment");
+  comment.setAttribute("aria-label", "Leave a comment");
   comment.appendChild(commentIcon);
   const share = document.createElement("button");
   const shareIcon = document.createElement("img");
   shareIcon.src = "images/icon-dm.png";
+  shareIcon.setAttribute("alt", "Share icon");
   share.classList.add("post-icon-btn");
-  share.setAttribute("alt", "Share this post");
+  share.setAttribute("aria-label", "Share this post");
   share.appendChild(shareIcon);
 
   const redHeart = document.createElement("img");
